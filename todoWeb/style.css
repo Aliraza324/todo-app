@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg-color);
+}
+:root {
+  --bg-color: #131313;
+  --li-bgColor: rgb(37 37 37);
+  --text-color: rgb(147 141 136);
+  --heading-color: #ffffff;
+  --addBtn-color: #efb764;
+}
+.container {
+  text-align: center;
+  padding: 100px;
+  width: 630px;
+  margin: auto;
+}
+.container h1 {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+.container .input {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .input input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 320px;
+  border-radius: 6px 0 0 6px;
+  color: var(--text-color);
+}
+.container .input button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0 6px 6px 0px;
+  background: var(--addBtn-color);
+  color: var(--heading-color);
+  cursor: pointer;
+}
+.container .input button:hover{
+  background: #f3ae47;
+}
+.todoItems ul {
+  padding: 0;
+}
+.todoItems #list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c2c2c;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin: 10px auto;
+  color: var(--text-color);
+}
+.todoItems i {
+  color: var(--text-color);
+  cursor: pointer;
+}
+.todoItems li {
+  position: relative; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuItem {
+  display: flex;
+  gap: 10px;
+}
+
+.menuItem i {
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.menuItem i:hover {
+  color: var(--addBtn-color);
+}
