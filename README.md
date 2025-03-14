@@ -21,3 +21,4 @@ git clone https://github.com/your-username/todo-app.git
 cd todo-app
 open index.html
 
+todo, todo-app, task-manager, javascript, localstorage, frontend, web-development
